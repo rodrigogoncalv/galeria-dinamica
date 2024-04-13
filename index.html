@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Galeria Dinâmica</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<script src="./assets/js/index.js" defer></script>
+	</head>
+	<body>
+		<h1>Galeria Dinâmica</h1>
+
+		<input type="file" data-js-input="upload" />
+
+		<button data-js-button="add-image">Adicionar</button>
+
+		<div
+			data-js-container="images"
+			style="display: flex; flex-wrap: wrap; padding-top: 1em;"
+		>
+			<h2 data-js-message="empty-gallery">Nenhuma imagem</h2>
+		</div>
+
+		<div
+			class="c-body__c-preloader"
+			id="preloader"
+			data-js-preloader="preloader"
+		>
+			<div
+				class="c-body__c-loader"
+				id="loader"
+				data-js-loader="loader"
+			></div>
+		</div>
+	</body>
+</html>
